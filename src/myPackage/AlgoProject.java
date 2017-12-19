@@ -18,6 +18,10 @@ public class AlgoProject {
 //		HashMap map2 = (HashMap)myMap;
 //		map2.put(3, "foo");
 		
+		Hashtable ht = new Hashtable();
+		ht.put(1, 12);
+		
+		
 		HashMap map = new HashMap();
 		map.put(1, 12);
 		map.put(1, 13);
@@ -32,19 +36,43 @@ public class AlgoProject {
 		
 		
 //		int[] myArr = new int[5];
-		int[] myArr = {1 , 6, 32, 7, 2 , 3, 5 , 4 ,12 ,4 } ;
+		int[] myArr = {1 , 6, 32, 7 ,1 ,5, 7, 98, 6,4, 3,44, 5,36, 4,563 ,546 ,5436 ,43,5,654,3, 2 , 3, 5 , 4 ,12 ,4 } ;
 
 		displayArray(myArr);
 		
-		bubbleSort(myArr);
-		
-		displayArray(myArr);
+//		bubbleSort(myArr);
+//		
+//		displayArray(myArr);
 
-		selectionSort(myArr);
+//		selectionSort(myArr);
+//		
+//		displayArray(myArr);
+//		
+		insertionSort(myArr);
 		
 		displayArray(myArr);
 		
 	}
+	
+	
+	public static void insertionSort(int[] arr){
+		System.out.println( " insertionSort " );
+
+		for(int i = 0 ; i < arr.length ; i++){
+			int j = i;
+			int insert = arr[i];
+			
+			
+			while(j > 0 && arr[j-1] > insert) {
+				arr[j] = arr[j-1];
+				j--;
+			}
+			arr[j] = insert;
+
+		}
+			
+	}
+	
 	
 	
 	public static void selectionSort(int[] arr){
@@ -80,10 +108,7 @@ public class AlgoProject {
 //					arr[j] = arr[j+1];
 //					arr[j+1] = temp;
 					swap (arr, j , j+1 );
-					
 				}
-				
-				
 			}
 		}
 			
@@ -101,6 +126,12 @@ public class AlgoProject {
 		for (int i = 0 ; i < arr.length ; i++){
 			System.out.println(i + " - " + arr[i]);
 		}
+	}
+	
+	
+	public static void mergeSort(int[] arr){
+		
+		
 		
 	}
 		
