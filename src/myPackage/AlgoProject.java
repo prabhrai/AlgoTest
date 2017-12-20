@@ -36,7 +36,7 @@ public class AlgoProject {
 		
 		
 //		int[] myArr = new int[5];
-		int[] myArr = {1 , 6, 32, 7 ,1 ,5, 7, 98, 6,4, 3,44, 5,36, 4,563 ,546 ,5436 ,43,5,654,3, 2 , 3, 5 , 4 ,12 ,4 } ;
+		int[] myArr = {1 , 6, 32, 7 ,1 ,3, 2 , 3, 5 , 4 ,12 ,4 } ;
 
 		displayArray(myArr);
 		
@@ -52,6 +52,7 @@ public class AlgoProject {
 		
 		displayArray(myArr);
 		
+		mergeSort(myArr);
 	}
 	
 	
@@ -130,7 +131,25 @@ public class AlgoProject {
 	
 	
 	public static void mergeSort(int[] arr){
+		System.out.println( "  " );
+
+		int low = 0;
+		int high = arr.length - 1 ;
 		
+		int mid = low + ( high - low) / 2 ;
+		
+		System.out.println(low);
+
+		System.out.println(high);
+		
+
+		System.out.println(mid);
+		
+		
+		System.out.println(arr[low]);
+		System.out.println(arr[mid]);
+		System.out.println(arr[high]);
+
 		
 		
 	}
